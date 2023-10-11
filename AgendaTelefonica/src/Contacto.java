@@ -1,17 +1,12 @@
 public class Contacto {
     private String nombre;
-    private String apellido;
     private String telefono;
 
-    public Contacto(String nombre, String apellido, String telefono) {
+    public Contacto(String nombre, String telefono) {
         this.nombre = nombre;
-        this.apellido = apellido;
         this.telefono = telefono;
     }
 
-    public String getCompleto() {
-        return nombre + " "+ apellido;
-    }
     public String getNombre() {
         return nombre;
     }
@@ -20,19 +15,19 @@ public class Contacto {
         this.nombre = nombre;
     }
 
-    public String getApellido() {
-        return apellido;
-    }
-
-    public void setApellido(String apellido) {
-        this.apellido = apellido;
-    }
-
     public String getTelefono() {
         return telefono;
     }
 
     public void setTelefono(String telefono) {
         this.telefono = telefono;
+    }
+
+    @Override
+    public String toString() {
+        return "Contacto{" +
+                "nombre='" + nombre + '\'' +
+                ", telefono='" + telefono + '\'' +
+                '}';
     }
 }
