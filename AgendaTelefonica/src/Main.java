@@ -16,7 +16,7 @@ public class Main {
             System.out.println("5. Espacio libre en la agenda");
             System.out.println("6. Agenda llena");
             System.out.println("7. Existe contacto en la agenda");
-            System.out.println("0. Salir del menu");
+            System.out.println("0. Salir del menu");E
             System.out.print("Selecciona una opción: ");
 
             Scanner scanner = new Scanner(System.in);
