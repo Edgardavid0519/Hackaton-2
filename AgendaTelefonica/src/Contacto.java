@@ -9,9 +9,6 @@ public class Contacto {
         this.telefono = telefono;
     }
 
-    public String getCompleto() {
-        return nombre + " "+ apellido;
-    }
     public String getNombre() {
         return nombre;
     }
