@@ -15,6 +15,10 @@ public class Estudiante {
     }
 
     public void agregarNota(double nota) {
+        if(nota <= 0.0){
+            notas.add(0.0);
+            return;
+        }
         notas.add(nota);
     }
 
